@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export FFLAGS="-w -O3 -finline -fautomatic -funroll-loops -march=native"
+
+rm int2
+gfortran -freal-8-real-16 -o int2 $FFLAGS testabramallquad.f abram0quad.f abramm1quad.f abram1quad.f abram2quad.f prini.f second-r8.f
+
+./int2
+
+
+
