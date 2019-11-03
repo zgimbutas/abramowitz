@@ -41,6 +41,7 @@ abramn.f - Abramowitz function J_n(z), Re(z) >= 0
 
 Fortran, quad precision
 =======================
+Note: all quad precision files need to be compiled using -freal-8-real-16 option in gfortran.
 
 abramm1quad.f - Abramowitz function J_{-1}(z), Re(z) >= 0, real *16 version
 
